@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Add styles here! */
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  padding: 16px 24px;
+  background-color: hsl(45deg, 100%, 50%);
+  margin: 0 -24px;
+  display: inline-block;
+  border-bottom: 5px solid hsl(45deg, 100%, 40%);
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+main {
+  border-top: 5px solid hsl(0deg, 0%, 40%);
+  background-color: hsl(0deg, 0%, 60%);
+}
+
+.max-width-wrapper {
+  padding: 40px 8px;
+}
+
+.intro-chunk {
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
+.intro-chunk p {
+  color: hsl(0deg, 0%, 40%);
+  font-size: 1rem;
+  max-width: 300px;
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+.card p {
+  color: hsl(0deg, 0%, 10%);
+}
+
+.card {
+  margin: 0 auto;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 8px 16px;
+  border-bottom: 5px solid hsl(0deg, 0%, 40%);
+}
+
+@media screen and (min-width: 769px) {
+  .intro-chunk, .card {
+    max-width: 500px;
+  }
+
+  .max-width-wrapper {
+    padding: 48px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .max-width-wrapper {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h2 {
+    max-width: 250px;
+  }
+
+  .max-width-wrapper {
+    padding: 40px 0;
+  }
+}
